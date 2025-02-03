@@ -1,23 +1,24 @@
-#ifndef DLL_H
-#define DLL_H
+#ifndef CDLL_H
+#define CDLL_H
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct node
 {
-	struct node *PrevNode;
-	struct node *NextNode;
+	struct node	*NextNode;
+	struct node	*PrevNode;
 	int	Data;
 } node;
 
 node *CreateNode(int data);
+void DestroyNode(node *destroy);
 void AppendNode(node **list, node *new);
 void InsertAfter(node *prev, node *new);
-void DestroyNode(node *remove);
 void RemoveNode(node **list, node *remove);
 node *GetNodeAt(node *list, int count);
-int CountNode(node *list);
+int GetNodeCount(node *list);
 void PrintList(node *list);
+void PrintNode(node *node);
 
 #endif

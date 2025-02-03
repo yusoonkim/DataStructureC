@@ -80,7 +80,7 @@ int CountNode(node *list)
 	return (i);
 }
 
-void PrintNode(node *list)
+void PrintList(node *list)
 {
 	while (list != NULL)
 	{

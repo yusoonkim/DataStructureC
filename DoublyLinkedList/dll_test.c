@@ -6,14 +6,14 @@ int	main()
 	AppendNode(&List, CreateNode(100));
 	AppendNode(&List, CreateNode(200));
 	AppendNode(&List, CreateNode(400));
-	PrintNode(List);
+	PrintList(List);
 	InsertAfter(GetNodeAt(List, 1), CreateNode(300));
-	PrintNode(List);
+	PrintList(List);
 	RemoveNode(&List, GetNodeAt(List, 1));
 	RemoveNode(&List, GetNodeAt(List, 1));
-	PrintNode(List);
+	PrintList(List);
 	InsertAfter(GetNodeAt(List, 0), CreateNode(500));
-	PrintNode(List);
+	PrintList(List);
 	printf("count = %d", CountNode(List));
 	return (0);
 }
