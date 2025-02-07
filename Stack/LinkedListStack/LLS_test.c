@@ -1,14 +1,14 @@
-#include "string_LLS.h"
+#include "LLS.h"
 
 int	main()
 {
-	LinkedListStack	*Stack;
+	Stack	*Stack;
 	Node	*Popped;
 	CreateStack(&Stack);
 	Push(Stack, CreateNode("abc"));
 	Push(Stack, CreateNode("def"));
-	Push(Stack, CreateNode("efg"));
-	Push(Stack, CreateNode("hij"));
+	Push(Stack, CreateNode("ghi"));
+	Push(Stack, CreateNode("jkl"));
 	printf("Size : %d, Top : %s\n", GetSize(Stack), Top(Stack)->Data);
 	while (!IsEmpty(Stack))
 	{
