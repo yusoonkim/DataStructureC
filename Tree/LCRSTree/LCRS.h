@@ -16,5 +16,7 @@ void	DestroyNode(Node *node);
 void	DestroyTree(Node *root);
 void	AddChildNode(Node *parent, Node *child);
 void	PrintTree(Node *root, int dep);
+int	CountNodes(Node *root);
+int	CountLeafs(Node *root);
 
 #endif

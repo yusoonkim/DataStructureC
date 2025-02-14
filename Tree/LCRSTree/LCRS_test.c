@@ -16,5 +16,7 @@ int	main()
 	AddChildNode(C, D);
 	AddChildNode(E, F);
 	PrintTree(root, 0);
+	printf("CountNodes : %d\n", CountNodes(root));
+	printf("CountLeafs : %d\n", CountLeafs(root));
 	DestroyTree(root);
 }

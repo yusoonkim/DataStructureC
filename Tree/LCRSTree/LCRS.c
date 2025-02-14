@@ -56,3 +56,24 @@ void	PrintTree(Node *root, int dep)
 		PrintTree(root->RightSibling, dep);
 }
 
+int	CountNodes(Node *root)
+{
+	int	i = 1;
+	if (root->LeftChild)
+		i += CountNodes(root->LeftChild);
+	if (root->RightSibling)
+		i += CountNodes(root->RightSibling);
+	return (i);
+}
+
+int	CountLeafs(Node *root)
+{
+	int	i = 0;
+	if (root->LeftChild)
+		i += CountLeafs(root->LeftChild);
+	else
+		i++;
+	if (root->RightSibling)
+		i += CountLeafs(root->RightSibling);
+	return (i);
+}
