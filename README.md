@@ -25,3 +25,4 @@ I hope this can be of some help to you!
 * **2025-02-04 05:10** : Upload all list structures (SLL, DLL, CDLL)
 * **2025-02-07 22:03** : Upload all Stack structures (AS, LLS)
 * **2025-02-10 04:33** : Upload all Queue structures (CQ, LQ)
+* **2025-02-16 03:12** : Upload all Tree structures (LCRST, SBT, ET, DS)
